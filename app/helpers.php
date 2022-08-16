@@ -10,9 +10,9 @@ function formatCurrent($number, $suffix = 'đ')
 }
 function productMaxPrice()
 {
-    return Product::where('status', '1')->max('price');
+    return Product::where('status', 1)->max('price');
 }
 function productMinPrice()
 {
-    return Product::where('status', '1')->min('price');
+    return Product::where('status', 1)->min('price');
 }
